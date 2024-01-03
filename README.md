@@ -57,19 +57,19 @@ Smartphone based on esp32s3 with GSM, WIFI, Bluetooth and more functions.
 
 ## Video
 
-![gif](https://imgur.com/BoUJO6y.gif)
+<img src="https://imgur.com/BoUJO6y.gif" alt="gif1" width="250"/>
 
-![gif](https://imgur.com/wojd5uF.gif)
+<img src="https://imgur.com/wojd5uF.gif" alt="gif2" width="250"/>
 
 ## ScreenShots
 
-![home](https://imgur.com/MNnYTZh.png)
+<img src="https://imgur.com/MNnYTZh.png" alt="home" width="250"/>
 
-![phone](https://imgur.com/B81hUai.png)
+<img src="https://imgur.com/B81hUai.png" alt="phone" width="250"/>
 
-![settings](https://imgur.com/fsxie5i.png)
+<img src="https://imgur.com/fsxie5i.png" alt="settings" width="250"/>
 
-![messages](https://imgur.com/DU3u41j.png)
+<img src="https://imgur.com/DU3u41j.png" alt="messages" width="250"/>
 
 [![Donate with PayPal](https://raw.githubusercontent.com/stefan-niedermann/paypal-donate-button/master/paypal-donate-button.png)](https://www.paypal.me/ajay8866)
 
