@@ -2,7 +2,8 @@
 
 ![CoverImage](assets/Cover.png)
 
-Smartphone based on ESP32S3 with SIMCOM, WIFI, Bluetooth and more functions.
+- Smartphone based on ESP32S3 with SIMCOM, WIFI, Bluetooth and more functions.
+- **Visit [ESP32 Phone Website](https://sites.google.com/view/esp32s3phone/home) for complete demo**
 
 ## Feature
 
