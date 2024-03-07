@@ -1,50 +1,22 @@
-# Smartphone based on ESP32 S3
+# ESP32-S3 Phone
 
-Smartphone based on esp32s3 with GSM, WIFI, Bluetooth and more functions.
+![CoverImage](assets/Cover.png)
 
-## TODO
+Smartphone based on ESP32S3 with SIMCOM, WIFI, Bluetooth and more functions.
 
-- [x] UI
-- [ ] WiFi
-- [ ] Bluetooth
-- [ ] SIM
-- [ ] Calls & SMS
-- [ ] Portable Hotspot
-- [ ] OTA
+## Feature
 
-## Used Tools
+- [x] WiFi
+- [x] Portable Hotspot
+- [x] Calls & SMS
+- [x] Music Player
+- [x] Gallery
 
-- VSCode + PlatformIO
-- LVGL
-- FreeRTOS
-- Arduino Framework
-- GUI Editors
+## Schematic
 
-## Hardware
+![schematic](assets/Schematic_ESP32-Smartphone_2024-03-07.svg)
 
-- [Display ST7796 + XPT2046](http://www.lcdwiki.com/4.0inch_SPI_Module_ST7796)
-- [ESP32S3](https://www.waveshare.com/esp32-s3-pico.htm)
-
-## Specs
-
-| ESP32S3 | Info   |
-| ------- | ------ |
-| f_size  | 16Mb   |
-| f_cpu   | 240MHz |
-| f_flash | 80Mhz  |
-
-## Connections
-
-| TFT PINS     | ESP32S3 |
-| ------------ | ------- |
-| TFT_MISO     | 13      |
-| TFT_MOSI     | 11      |
-| TFT_SCLK     | 12      |
-| TFT_CS       | 8       |
-| TFT_DC       | 14      |
-| TFT_TOUCH_CS | 15      |
-
-## Flashing bin files
+## Flashing Guide
 
 - With [esptool-js](https://espressif.github.io/esptool-js/) you can flash ESP32 via web.
 
@@ -54,31 +26,34 @@ Smartphone based on esp32s3 with GSM, WIFI, Bluetooth and more functions.
     | 0x8000   | bin/partitions.bin |
     | 0xe000   | bin/boot_app0.bin  |
     | 0x10000  | bin/firmware.bin   |
+    | 0x670000 | bin/spiffs.bin     |
 
-## Video
+## Hardware
 
-<img src="https://imgur.com/BoUJO6y.gif" alt="gif1" width="250"/>
+| Parts            | Link                                                                                                                                                                                                                     |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ESP32 S3         | [Link](https://www.waveshare.com/esp32-s3-pico.htm)                                                                                                                                                                      |
+| SIM A7672s       | [Link](https://www.ktron.in/product/sim-a7672s-4g-2g-lte-development-board/)                                                                                                                                             |
+| ST7796           | [Link](http://www.lcdwiki.com/4.0inch_SPI_Module_ST7796)                                                                                                                                                                 |
+| MAX98357 I2S Amp | [Link](https://robokits.co.in/sensors/sound/max98357-i2s-3w-class-d-amplifier-interface-audio-decoder-module-filterless-board-for-raspberry-pi-esp32)                                                                    |
+| MIC MAX4466      | [Link](https://www.electronicscomp.com/max4466-electret-microphone-amplifier-with-adjustable-gain-module?gad_source=1&gclid=CjwKCAiA6KWvBhAREiwAFPZM7rXsLr3B9vmp1EQP_N32F7jNI7Y1xVai9YDiItXjsKsoMDOqdUk0DBoCO-IQAvD_BwE) |
+| PAM8403          | [Link](https://robu.in/product/pam8403-5v-two-channel-stereo-mini-class-d-3w3w-audio-amplifier/)                                                                                                                         |
 
-<img src="https://imgur.com/wojd5uF.gif" alt="gif2" width="250"/>
+## Software, IDE & Library
 
-## ScreenShots
-
-<img src="https://imgur.com/MNnYTZh.png" alt="home" width="250"/>
-
-<img src="https://imgur.com/B81hUai.png" alt="phone" width="250"/>
-
-<img src="https://imgur.com/fsxie5i.png" alt="settings" width="250"/>
-
-<img src="https://imgur.com/DU3u41j.png" alt="messages" width="250"/>
-
-[![Donate with PayPal](https://raw.githubusercontent.com/stefan-niedermann/paypal-donate-button/master/paypal-donate-button.png)](https://www.paypal.me/ajay8866)
+| Item              | Link                                                                                                      |
+| ----------------- | --------------------------------------------------------------------------------------------------------- |
+| LVGL              | [lvgl](https://github.com/lvgl/lvgl)                                                                      |
+| NXP GUIGuider     | [GUIGuider](https://www.nxp.com/design/design-center/software/development-software/gui-guider:GUI-GUIDER) |
+| VSCode            | [VSCode](https://code.visualstudio.com/)                                                                  |
+| PlatformIO        | [PlatformIO](https://platformio.org/)                                                                     |
+| FreeRTOS          | [FreeRTOS](https://www.freertos.org/index.html)                                                           |
+| ESP32-audioI2S    | [ESP32-audioI2S](https://github.com/schreibfaul1/ESP32-audioI2S)                                          |
+| ESPAsyncWebServer | [ESPAsyncWebServer](https://github.com/me-no-dev/ESPAsyncWebServer)                                       |
+| TFT_eSPI          | [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)                                                            |
 
 ## Disclaimer
 
-- This project it's just for hobby project. Design is inspired by iOS.
+- This prototype is strictly for educational use and is not for commercial purposes. The iOS-inspired UI is for learning purposes only and is not affiliated with Apple Inc. Respect intellectual property rights and use responsibly.
 
-## Important
-
-- Use this project at your own risc.
-
-<!-- https://imgur.com/a/c68v3SE -->
+[![Donate with PayPal](https://raw.githubusercontent.com/stefan-niedermann/paypal-donate-button/master/paypal-donate-button.png)](https://www.paypal.me/ajay8866)
